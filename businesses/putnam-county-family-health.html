@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#1A6B8A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Phillips Family Medicine — Putnam County Local</title>
+  <meta name="description" content="Comprehensive primary care for Putnam County families — from pediatrics to senior wellness. Accepting new patients, sliding-scale fees available.">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Putnam County Family Health Center",
+  "description": "Comprehensive primary care for Putnam County families — from pediatrics to senior wellness. Accepting new patients, sliding-scale fees available.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100 Commerce Dr",
+    "addressLocality": "Eatonton",
+    "addressRegion": "GA",
+    "postalCode": "31024",
+    "addressCountry": "US"
+  },
+  "telephone": "(706) 485-1200",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".speakable"]
+  }
+}
+  </script>
+  <style>
+
+    :root {
+      --primary: #1A6B8A;
+      --primary-dark: #0F4A61;
+      --primary-light: #2899BB;
+      --primary-pale: #E2F3F8;
+      --dark: #0D1B2A;
+      --dark2: #162333;
+      --white: #FFFFFF;
+      --gray-50: #F7FBFD;
+      --gray-100: #EEF6FA;
+      --gray-200: #D8ECF3;
+      --text: #0D1B2A;
+      --text-muted: #5A6E7A;
+      --radius: 10px;
+      --shadow: 0 2px 12px rgba(0,0,0,.08);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.14);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--gray-50); color: var(--text); }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .site-header { background: var(--dark); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.3); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; gap: 20px; height: 64px; }
+    .site-logo { display: flex; align-items: center; gap: 10px; font-size: 1.35rem; font-weight: 800; color: var(--white); white-space: nowrap; }
+    .site-logo .logo-icon { font-size: 1.5rem; }
+    .site-logo span b { color: var(--primary-light); }
+    .header-nav { display: flex; align-items: center; gap: 4px; flex: 1; flex-wrap: wrap; }
+    .header-nav a { color: rgba(255,255,255,.8); font-size: .82rem; font-weight: 500; padding: 6px 10px; border-radius: 6px; transition: color .2s, background .2s; }
+    .header-nav a:hover { color: var(--white); background: rgba(255,255,255,.1); }
+    .header-nav .btn-add { margin-left: auto; background: var(--primary); color: var(--white) !important; padding: 8px 14px; border-radius: 8px; font-weight: 700; font-size: .82rem; }
+    .header-nav .btn-add:hover { background: var(--primary-dark) !important; }
+    .burger { display: none; cursor: pointer; color: var(--white); font-size: 1.4rem; margin-left: auto; }
+    .site-footer { background: var(--dark); color: rgba(255,255,255,.75); margin-top: 60px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; padding: 48px 20px 20px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+    .footer-brand .logo { font-size: 1.2rem; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .footer-brand .logo b { color: var(--primary-light); }
+    .footer-brand p { font-size: .85rem; line-height: 1.6; }
+    .footer-socials { display: flex; gap: 12px; margin-top: 16px; }
+    .footer-socials a { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.1); display: grid; place-items: center; font-size: .9rem; }
+    .footer-socials a:hover { background: var(--primary); }
+    .footer-col h4 { color: var(--white); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
+    .footer-col a { display: block; font-size: .85rem; color: rgba(255,255,255,.65); padding: 3px 0; }
+    .footer-col a:hover { color: var(--primary-light); }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; padding: 16px 20px; border-top: 1px solid rgba(255,255,255,.1); display: flex; justify-content: space-between; font-size: .78rem; color: rgba(255,255,255,.45); }
+    @media(max-width:900px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:640px) { .header-nav { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--dark2); padding: 12px 20px 20px; gap: 4px; } .header-nav.open { display: flex; } .header-nav .btn-add { margin-left: 0; text-align: center; } .burger { display: block; } .footer-inner { grid-template-columns: 1fr; gap: 24px; } }
+
+    .back-bar { max-width:1200px; margin:24px auto 0; padding:0 20px; }
+    .back-link { color:var(--primary); font-weight:600; font-size:.9rem; }
+    .back-link:hover { text-decoration:underline; }
+    .featured-ribbon { background: linear-gradient(90deg,#f59e0b,#d97706); color:#fff; text-align:center; padding:10px 20px; font-size:.85rem; font-weight:700; letter-spacing:.04em; }
+    .biz-hero { background: linear-gradient(135deg, var(--dark) 0%, var(--primary-dark) 100%); color:var(--white); padding:40px 20px; }
+    .biz-hero-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+    .biz-icon-lg { font-size:4rem; background:rgba(255,255,255,.12); border-radius:16px; padding:16px 20px; line-height:1; }
+    .biz-hero h1 { font-size:clamp(1.4rem,3vw,2rem); font-weight:800; margin-bottom:8px; }
+    .biz-hero .cat { background:rgba(255,255,255,.15); padding:4px 14px; border-radius:20px; font-size:.8rem; font-weight:600; display:inline-block; margin-bottom:10px; }
+    .biz-hero .desc { font-size:.95rem; opacity:.88; max-width:600px; line-height:1.6; }
+    .content { max-width:1200px; margin:32px auto; padding:0 20px; display:grid; grid-template-columns:1fr 340px; gap:28px; }
+    .info-card { background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow); padding:24px; margin-bottom:20px; }
+    .info-card h2 { font-size:1rem; font-weight:700; margin-bottom:16px; padding-bottom:10px; border-bottom:2px solid var(--primary-pale); color:var(--primary); }
+    .info-row { display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-bottom:1px solid var(--gray-100); font-size:.9rem; }
+    .info-row:last-child { border-bottom:none; }
+    .info-icon { font-size:1.1rem; flex-shrink:0; margin-top:1px; }
+    .info-row a { color:var(--primary); }
+    .info-row a:hover { text-decoration:underline; }
+    .tags-wrap { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+    .tag { background:var(--primary-pale); color:var(--primary-dark); font-size:.78rem; padding:4px 12px; border-radius:20px; font-weight:600; }
+    .action-btns { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; }
+    .action-btn { flex:1; min-width:120px; text-align:center; padding:12px 16px; border-radius:8px; background:var(--primary); color:var(--white); font-weight:700; font-size:.88rem; transition:background .2s; }
+    .action-btn:hover { background:var(--primary-dark); }
+    .action-btn.outline { background:var(--white); color:var(--primary); border:2px solid var(--primary); }
+    .action-btn.outline:hover { background:var(--primary-pale); }
+    .action-btn.gold { background:linear-gradient(90deg,#f59e0b,#d97706); }
+    .action-btn.gold:hover { background:#b45309; }
+    .map-embed { width:100%; height:280px; border:none; border-radius:var(--radius); overflow:hidden; }
+    .sizes-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:12px; margin:16px 0; }
+    .size-box { background:var(--primary-pale); border-radius:8px; padding:14px; text-align:center; }
+    .size-box .sz { font-size:1.4rem; font-weight:800; color:var(--primary); }
+    .size-box .lbl { font-size:.75rem; color:var(--text-muted); margin-top:4px; }
+    @media(max-width:768px){ .content{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/index.html" class="site-logo"><span class="logo-icon">🌊</span><span><b>Putnam County</b> Local</span></a>
+      <nav class="header-nav" id="mainNav">
+        <a href="/index.html">Directory</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/events.html">Events</a>
+        <a href="/deals.html">Deals</a>
+        <a href="/march-2026-business-spotlight.html">Spotlight</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/add-listing.html" class="btn-add">+ Free Listing</a>
+      </nav>
+      <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+
+
+
+<div style="width:100%;height:280px;overflow:hidden;"><img src="https://lh3.googleusercontent.com/places/ANXAkqHDlF4O85vyI1AqWl3kmKFTvHW_BHc7toRMuaXrb8jIjcqYKPJdi3qOy9atohZD1Et7RnmWB37OjrbRnWNo74NdG4-yRaHmop8=s4800-w600-h400" alt="Phillips Family Medicine" style="width:100%;height:100%;object-fit:cover;display:block;" referrerpolicy="no-referrer"></div>
+<div class="back-bar"><a href="/index.html" class="back-link">← Back to Directory</a></div>
+
+<div class="biz-hero">
+  <div class="biz-hero-inner">
+    <div class="biz-icon-lg">🏥</div>
+    <div>
+      <div class="cat">Health & Medical</div>
+      <h1 class="speakable">Phillips Family Medicine</h1>
+      <p class="desc speakable">Comprehensive primary care for Putnam County families — from pediatrics to senior wellness. Accepting new patients, sliding-scale fees available.</p>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <main>
+    <div class="info-card">
+      <h2>📋 Business Info</h2>
+      <div class="info-row"><span class="info-icon">📞</span><div><a href="tel:7064851145" class="speakable">(706) 485-1145</a></div></div>
+      <div class="info-row"><span class="info-icon">📍</span><div><a href="https://maps.google.com/?q=142+Hospital+Dr,+Eatonton,+GA+31024" target="_blank" class="speakable">142 Hospital Dr, Eatonton, GA 31024</a></div></div>
+      <div class="info-row"><span class="info-icon">🕐</span><div class="speakable">Mon: 8am-5pm · Tue: 8am-5pm · Wed: 8am-5pm · Thu: 8am-5pm · Fri: 8am-12pm</div></div>
+      
+      
+      <div class="info-row"><span class="info-icon">⭐</span><div>3.4/5 &nbsp;·&nbsp; 5 Google reviews</div></div>
+      <div class="info-row"><span class="info-icon">🏷️</span><div class="tags-wrap"><span class='tag'>Primary Care</span><span class='tag'>Pediatrics</span><span class='tag'>Sliding Scale</span></div></div>
+    </div>
+    <div class="info-card">
+      <h2>💬 About Phillips Family Medicine</h2>
+      <p style="line-height:1.7;color:var(--text-muted);font-size:.95rem;margin-bottom:14px;">Putnam County Family Health Center provides accessible, high-quality primary care to residents throughout Eatonton and all of Putnam County. Their team of board-certified physicians and nurse practitioners offer comprehensive care across all age groups — well-child visits, chronic disease management, preventive screenings, vaccinations, lab work, and behavioral health services. As a community health center, they offer sliding-scale fees to ensure quality care is available to every resident regardless of insurance status. Same-day appointments are often available, and the staff is known for the kind of unhurried, attentive care that's harder to find at larger facilities.</p>
+    </div>
+    
+    
+  </main>
+  <aside>
+    <div class="action-btns">
+      <a href="tel:7064851145" class="action-btn">📞 Call Now</a>
+      <a href="https://maps.google.com/?q=142+Hospital+Dr,+Eatonton,+GA+31024" target="_blank" class="action-btn outline">📍 Directions</a>
+      
+    </div>
+    
+    <div class="info-card">
+      <h2>📍 Map</h2>
+      <iframe class="map-embed" src="https://maps.google.com/maps?q=142+Hospital+Dr,+Eatonton,+GA+31024&output=embed" loading="lazy" allowfullscreen title="Map of Putnam County Family Health Center"></iframe>
+    </div>
+    <div class="info-card" style="text-align:center;background:var(--primary-pale);">
+      <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:12px">Is this your business?</p>
+      <a href="/add-listing.html" style="color:var(--primary);font-weight:700;font-size:.9rem">Update this listing →</a>
+    </div>
+  </aside>
+</div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">🌊 <b>Putnam County</b> Local</div>
+        <p>The free local business directory for Putnam County, GA — serving Eatonton, Lake Oconee, Lake Sinclair, and all of Lake Country since 2025.</p>
+        <div class="footer-socials"><a href="#" title="Facebook">📘</a><a href="#" title="Instagram">📷</a><a href="#" title="X">🐦</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="/index.html">Browse All</a>
+        <a href="/blog.html">Blog &amp; Guides</a>
+        <a href="/events.html">Events Calendar</a>
+        <a href="/deals.html">Deals &amp; Specials</a>
+        <a href="/march-2026-business-spotlight.html">Business Spotlight</a>
+      </div>
+      <div class="footer-col">
+        <h4>Business Owners</h4>
+        <a href="/add-listing.html">Add Free Listing</a>
+        <a href="/advertise.html">Advertise With Us</a>
+        <a href="/contact.html">Contact Us</a>
+        <a href="https://www.putnamcountyga.us" target="_blank">Putnam County Gov</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About Us</a>
+        <a href="/new-to-eatonton.html">New Resident Guide</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Putnam County Local · Not affiliated with Putnam County Government or Putnam County Schools</span>
+      <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('click',function(e){
+      var nav=document.getElementById('mainNav'),burger=document.querySelector('.burger');
+      if(nav&&!nav.contains(e.target)&&burger&&!burger.contains(e.target))nav.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
