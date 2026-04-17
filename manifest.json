@@ -1,6 +1,6 @@
 {
-  "name": "Putnam County Local",
-  "short_name": "PCLocal",
+  "name": "Putnam County Info",
+  "short_name": "PCInfo",
   "description": "Free local business directory for Putnam County, GA",
   "start_url": "/index.html",
   "display": "standalone",
